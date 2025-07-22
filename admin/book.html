@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock สินค้า | Admin</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-5">
+                    <div class="flex flex-col items-start">
+                        <span class="font-heading text-xl font-bold">Stock สินค้า</span>
+                        <span class="text-sm text-gray-600">ระบบจัดการสินค้า</span>
+                    </div>
+                </div>
+
+                <!-- Menu (Desktop) -->
+                <div id="menu-desktop" class="hidden md:flex space-x-6 text-md items-center relative">
+
+                    <!-- Dropdown Parent -->
+                    <div class="relative group">
+                        <button id="dropdownBtn"
+                            class="flex items-center bg-gray-100 px-4 py-2 rounded-lg hover:bg-gray-200 transition cursor-pointer">
+                            Stock สินค้า
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown List -->
+                        <div id="dropdownMenu" class="absolute left-0 mt-2 w-40 bg-white rounded-lg shadow-lg hidden">
+                            <a href="shirt.html"class="block px-4 py-2 hover:bg-gray-100">เสื้อ</a>
+                            <a href="bag.html" class="block px-4 py-2 hover:bg-gray-100">กระเป๋า</a>
+                            <a href="glass.html" class="block px-4 py-2 hover:bg-gray-100">แก้ว</a>
+                            <a href="gap.html" class="block px-4 py-2 hover:bg-gray-100">หมวก</a>
+                            <a href="umberlla.html" class="block px-4 py-2 hover:bg-gray-100">ร่ม</a>
+                            <a href="pin.html" class="block px-4 py-2 hover:bg-gray-100">เข็มกลัด</a>
+                            <a href="book.html" class="block px-4 py-2 hover:bg-gray-100">สมุด</a>
+                            <a href="pen.html" class="block px-4 py-2 hover:bg-gray-100">ปากกา</a>
+                        </div>
+                    </div>
+
+                    <!-- Logout -->
+                    <a href="../../../" id="logout"
+                        class="bg-red-500 text-white px-4 py-2 rounded-lg shadow hover:bg-red-600 transition">
+                        ออกจากระบบ
+                    </a>
+                </div>
+
+
+                <!-- Hamburger (Mobile) -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="focus:outline-none cursor-pointer" aria-label="Toggle menu">
+                        <!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dropdown Menu (Mobile) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white text-gray-800 transition-all duration-300 ease-in-out shadow-md text-center">
+            <p class="px-4 py-2 font-bold text-2xl text-gray-900">Stock สินค้า</p>
+            <hr class="border-gray-300">
+            <a href="shirt.html"class="block px-4 py-3 hover:bg-gray-200 transition">เสื้อ</a>
+            <a href="bag.html" class="block px-4 py-3 hover:bg-gray-200 transition">กระเป๋า</a>
+            <a href="glass.html" class="block px-4 py-3 hover:bg-gray-200 transition">แก้ว</a>
+            <a href="gap.html" class="block px-4 py-3 hover:bg-gray-200 transition">หมวก</a>
+            <a href="umberlla.html" class="block px-4 py-3 hover:bg-gray-200 transition">ร่ม</a>
+            <a href="pin.html" class="block px-4 py-3 hover:bg-gray-200 transition">เข็มกลัด</a>
+            <a href="book.html" class="block px-4 py-3 hover:bg-gray-200 transition">สมุด</a>
+            <a href="pen.html" class="block px-4 py-3 hover:bg-gray-200 transition">ปากกา</a>
+            <a href="../../../" id="logout-mobile"
+                class="block px-4 py-3 bg-red-600 text-white hover:bg-red-700 transition text-center font-bold">
+                ออกจากระบบ
+            </a>
+        </div>
+
+        <script src="../js/hamberger.js"></script>
+    </nav>
+
+    <div class="container mx-auto p-4">
+        <div class="bg-white rounded-xl shadow-lg p-8 max-w-5xl mx-auto">
+            <h1 class="text-4xl font-extrabold text-center text-gray-900 mb-8" id="title-product">Stock สมุด</h1>
+            <hr class="mb-8 border-gray-300" />
+
+            <form action="#" method="post" enctype="multipart/form-data" class="space-y-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <div>
+                        <label for="size" class="block font-semibold mb-2 text-gray-700">ขนาด</label>
+                        <select id="size" name="size" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                         focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                         transition">
+                            <option selected disabled>-- โปรดเลือกขนาด --</option>
+                            <option>A5</option>
+                            <option>A4</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="cover-type" class="block font-semibold mb-2 text-gray-700">ประเภทปก</label>
+                        <select id="cover-type" name="cover-type" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                         focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                         transition">
+                            <option selected disabled>-- โปรดเลือกประเภทปก --</option>
+                            <option>ปกแข็ง</option>
+                            <option>ปกอ่อน</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="pages" class="block font-semibold mb-2 text-gray-700">จำนวนหน้า</label>
+                        <input id="pages" name="pages" type="number" min="1" placeholder="จำนวนหน้า" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                        transition" />
+                    </div>
+
+                    <div>
+                        <label for="color" class="block font-semibold mb-2 text-gray-700">สี</label>
+                        <select id="color" name="color" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                         focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                         transition">
+                            <option selected disabled>-- โปรดเลือกสี --</option>
+                            <option>ดำ</option>
+                            <option>ขาว</option>
+                            <option>น้ำเงิน</option>
+                            <option>แดง</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="amount" class="block font-semibold mb-2 text-gray-700">จำนวนสินค้า</label>
+                        <input id="amount" name="amount" type="number" min="1" placeholder="จำนวน" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                        transition" />
+                    </div>
+
+                    <div>
+                        <label for="price" class="block font-semibold mb-2 text-gray-700">ราคา (บาท)</label>
+                        <input id="price" name="price" type="number" min="0" step="0.01" placeholder="ราคา" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                        transition" />
+                    </div>
+
+                    <div>
+                        <label for="img" class="block font-semibold mb-2 text-gray-700">รูปภาพสินค้า</label>
+                        <input id="img" name="img" type="file" accept="image/*" class="border border-gray-300 rounded-lg w-full px-3 py-2 mt-1
+                        focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                        transition" />
+                    </div>
+
+                    <div class="md:col-span-3">
+                        <label for="description" class="block font-semibold mb-2 text-gray-700">รายละเอียดสินค้า</label>
+                        <textarea id="description" name="description" rows="4" placeholder="รายละเอียดสินค้า..." class="border border-gray-300 rounded-lg w-full px-4 py-3 mt-1
+                           focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
+                           transition resize-none"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-end gap-4">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg
+                       transition duration-200">
+                        บันทึก
+                    </button>
+                    <button type="reset" class="bg-gray-400 hover:bg-gray-600 text-white font-semibold px-8 py-3 rounded-lg
+                       transition duration-200">
+                        ล้างค่า
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

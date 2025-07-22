@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Stock สินค้า</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white rounded-xl shadow-lg p-8 w-full max-w-md">
+        <!-- Logo -->
+        <div class="flex flex-col items-center mb-6">
+            <h1 class="text-2xl font-bold text-gray-800">ระบบจัดการ Stock สินค้า</h1>
+        </div>
+
+        <!-- ฟอร์ม Login -->
+        <form action="#" method="post">
+            <!-- Username -->
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-semibold mb-2">ชื่อผู้ใช้</label>
+                <input type="text" id="username" name="username"
+                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
+                    placeholder="กรอกชื่อผู้ใช้">
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 font-semibold mb-2">รหัสผ่าน</label>
+                <input type="password" id="password" name="password"
+                    class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
+                    placeholder="กรอกรหัสผ่าน">
+            </div>
+
+
+            <div class="flex flex-col space-y-4">
+                <!-- ปุ่มสำหรับ Admin -->
+                <a href="admin/shirt.html"
+                    class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition font-bold w-full text-center">
+                    เข้าสู่ระบบ (Admin)
+                </a>
+
+                <!-- ปุ่มสำหรับ User -->
+                <a href="user.html"
+                    class="bg-gray-200 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-300 transition font-bold w-full text-center">
+                    สำหรับผู้ใช้ (User)
+                </a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
