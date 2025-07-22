@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
 
+:root {
+  /* Theme Colors */
+  --primary-color: #1d4ed8; /* ฟ้าเข้ม */
+  --primary-light: #3b82f6; /* ฟ้าอ่อน */
+  --secondary-color: #ffffff; /* ขาว */
+  --text-color: #1f2937; /* เทาเข้ม */
+  --hover-color: #2563eb; /* Hover ฟ้าเข้มกว่า */
+  --bg-color: #f9fafb; /* พื้นหลังจาง */
+}
+
 * {
   font-family: "Bai Jamjuree", sans-serif;
 }
@@ -13,12 +23,10 @@ body {
 #menu-desktop a {
   transition: 0.2s ease-in-out;
   &:hover {
-    padding: 8px;
     background-color: #e50010;
     color: white;
   }
 }
-
 
 #mobile-menu li a:hover {
   background-color: #e50010;

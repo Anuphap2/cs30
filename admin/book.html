@@ -11,7 +11,7 @@
 
 <body>
 
-  <nav class="bg-white shadow-lg">
+    <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -28,7 +28,7 @@
                     <!-- Dropdown Parent -->
                     <div class="relative group">
                         <button id="dropdownBtn"
-                            class="flex items-center bg-gray-100 px-4 py-2 rounded-lg hover:bg-gray-200 transition cursor-pointer">
+                            class="flex items-center bg-gray-100 px-4 py-2 rounded hover:bg-gray-200 transition cursor-pointer">
                             Stock สินค้า
                             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -37,8 +37,8 @@
                         </button>
 
                         <!-- Dropdown List -->
-                        <div id="dropdownMenu" class="absolute left-0 mt-2 w-40 bg-white rounded-lg shadow-lg hidden">
-                            <a href="shirt.html"class="block px-4 py-2 hover:bg-gray-100">เสื้อ</a>
+                        <div id="dropdownMenu" class="absolute left-0 mt-2 w-40 bg-white rounded shadow-lg hidden">
+                            <a href="shirt.html" class="block px-4 py-2 hover:bg-gray-100">เสื้อ</a>
                             <a href="bag.html" class="block px-4 py-2 hover:bg-gray-100">กระเป๋า</a>
                             <a href="glass.html" class="block px-4 py-2 hover:bg-gray-100">แก้ว</a>
                             <a href="gap.html" class="block px-4 py-2 hover:bg-gray-100">หมวก</a>
@@ -51,7 +51,7 @@
 
                     <!-- Logout -->
                     <a href="../../../" id="logout"
-                        class="bg-red-500 text-white px-4 py-2 rounded-lg shadow hover:bg-red-600 transition">
+                        class="bg-red-500 text-white px-4 py-2 rounded shadow hover:bg-red-600 transition">
                         ออกจากระบบ
                     </a>
                 </div>
@@ -76,7 +76,7 @@
             class="hidden md:hidden bg-white text-gray-800 transition-all duration-300 ease-in-out shadow-md text-center">
             <p class="px-4 py-2 font-bold text-2xl text-gray-900">Stock สินค้า</p>
             <hr class="border-gray-300">
-            <a href="shirt.html"class="block px-4 py-3 hover:bg-gray-200 transition">เสื้อ</a>
+            <a href="shirt.html" class="block px-4 py-3 hover:bg-gray-200 transition">เสื้อ</a>
             <a href="bag.html" class="block px-4 py-3 hover:bg-gray-200 transition">กระเป๋า</a>
             <a href="glass.html" class="block px-4 py-3 hover:bg-gray-200 transition">แก้ว</a>
             <a href="gap.html" class="block px-4 py-3 hover:bg-gray-200 transition">หมวก</a>
@@ -103,7 +103,7 @@
 
                     <div>
                         <label for="size" class="block font-semibold mb-2 text-gray-700">ขนาด</label>
-                        <select id="size" name="size" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        <select id="size" name="size" class="border border-gray-300 rounded w-full px-4 py-2 mt-1
                          focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
                          transition">
                             <option selected disabled>-- โปรดเลือกขนาด --</option>
@@ -114,7 +114,7 @@
 
                     <div>
                         <label for="cover-type" class="block font-semibold mb-2 text-gray-700">ประเภทปก</label>
-                        <select id="cover-type" name="cover-type" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        <select id="cover-type" name="cover-type" class="border border-gray-300 rounded w-full px-4 py-2 mt-1
                          focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
                          transition">
                             <option selected disabled>-- โปรดเลือกประเภทปก --</option>
@@ -125,14 +125,14 @@
 
                     <div>
                         <label for="pages" class="block font-semibold mb-2 text-gray-700">จำนวนหน้า</label>
-                        <input id="pages" name="pages" type="number" min="1" placeholder="จำนวนหน้า" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        <input id="pages" name="pages" type="number" min="1" placeholder="จำนวนหน้า" class="border border-gray-300 rounded w-full px-4 py-2 mt-1
                         focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
                         transition" />
                     </div>
 
                     <div>
                         <label for="color" class="block font-semibold mb-2 text-gray-700">สี</label>
-                        <select id="color" name="color" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        <select id="color" name="color" class="border border-gray-300 rounded w-full px-4 py-2 mt-1
                          focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
                          transition">
                             <option selected disabled>-- โปรดเลือกสี --</option>
@@ -145,41 +145,40 @@
 
                     <div>
                         <label for="amount" class="block font-semibold mb-2 text-gray-700">จำนวนสินค้า</label>
-                        <input id="amount" name="amount" type="number" min="1" placeholder="จำนวน" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        <input id="amount" name="amount" type="number" min="1" placeholder="จำนวน" class="border border-gray-300 rounded w-full px-4 py-2 mt-1
                         focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
                         transition" />
                     </div>
 
                     <div>
                         <label for="price" class="block font-semibold mb-2 text-gray-700">ราคา (บาท)</label>
-                        <input id="price" name="price" type="number" min="0" step="0.01" placeholder="ราคา" class="border border-gray-300 rounded-lg w-full px-4 py-2 mt-1
+                        <input id="price" name="price" type="number" min="0" step="0.01" placeholder="ราคา" class="border border-gray-300 rounded w-full px-4 py-2 mt-1
                         focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
                         transition" />
                     </div>
 
                     <div>
                         <label for="img" class="block font-semibold mb-2 text-gray-700">รูปภาพสินค้า</label>
-                        <input id="img" name="img" type="file" accept="image/*" class="border border-gray-300 rounded-lg w-full px-3 py-2 mt-1
+                        <input id="img" name="img" type="file" accept="image/*" class="border border-gray-300 rounded w-full px-3 py-2 mt-1
                         focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
                         transition" />
                     </div>
 
                     <div class="md:col-span-3">
                         <label for="description" class="block font-semibold mb-2 text-gray-700">รายละเอียดสินค้า</label>
-                        <textarea id="description" name="description" rows="4" placeholder="รายละเอียดสินค้า..." class="border border-gray-300 rounded-lg w-full px-4 py-3 mt-1
+                        <textarea id="description" name="description" rows="4" placeholder="รายละเอียดสินค้า..." class="border border-gray-300 rounded w-full px-4 py-3 mt-1
                            focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500
                            transition resize-none"></textarea>
                     </div>
 
                 </div>
-
-                <div class="flex flex-col md:flex-row justify-end gap-4">
-                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg
-                       transition duration-200">
+                <div class="flex justify-end gap-4">
+                   <button type="submit"
+                        class="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded font-semibold transition cursor-pointer">
                         บันทึก
                     </button>
-                    <button type="reset" class="bg-gray-400 hover:bg-gray-600 text-white font-semibold px-8 py-3 rounded-lg
-                       transition duration-200">
+                      <button type="reset"
+                        class="bg-gray-400 hover:bg-gray-600 text-white px-8 py-3 rounded font-semibold transition cursor-pointer">
                         ล้างค่า
                     </button>
                 </div>
