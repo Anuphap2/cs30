@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* การ์ดสินค้า */
+.product-card {
+  @apply bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1 p-5;
+}
+
+/* รูปภาพสินค้า */
+.product-img {
+  @apply w-full h-60 object-cover rounded;
+}
+
+/* ชื่อสินค้า */
+.product-title {
+  @apply text-lg font-bold mt-4;
+}
+
+/* ราคา */
+.product-price {
+  @apply text-gray-700 mt-1;
+}
+
+/* สต็อก */
+.product-stock {
+  @apply text-green-600 text-sm mt-1;
+}
+
+/* ปุ่มดำ */
+.btn-black {
+  @apply w-full bg-black text-white font-semibold py-2 mt-4 rounded hover:bg-gray-800 transition cursor-pointer;
+}

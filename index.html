@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>สินค้า - CSMJU</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,14 +15,14 @@
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
             <h1 class="text-2xl font-bold tracking-wide">
-                <a href="">
+                <a href="index.html">
                     CSMJU
                 </a>
             </h1>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-6 text-lg">
-                <a href="#" class="hover:underline">เสื้อ</a>
+                <a href="description/shirt.html" class="hover:underline">เสื้อ</a>
                 <a href="#" class="hover:underline">กระเป๋า</a>
                 <a href="#" class="hover:underline">แก้ว</a>
                 <a href="#" class="hover:underline">หมวก</a>
@@ -52,7 +52,7 @@
             <a href="index.html" class="block px-4 py-3 hover:bg-gray-100">หน้าหลัก</a>
             <hr class="my-2 border-gray-300">
             <div class="px-4 py-2 font-semibold">สินค้า</div>
-            <a href="#" class="block px-4 py-3 hover:bg-gray-100">เสื้อ</a>
+            <a href="description/shirt.html" class="block px-4 py-3 hover:bg-gray-100">เสื้อ</a>
             <a href="#" class="block px-4 py-3 hover:bg-gray-100">กระเป๋า</a>
             <a href="#" class="block px-4 py-3 hover:bg-gray-100">แก้ว</a>
             <a href="#" class="block px-4 py-3 hover:bg-gray-100">หมวก</a>
@@ -80,89 +80,90 @@
     </div>
 
     <!-- Grid สินค้า -->
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-10">
-        <!-- Card -->
-        <div class="bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1 p-5">
-            <img src="assets/shirt.jpg" alt="เสื้อ" class="w-full h-60 object-cover rounded">
-            <h2 class="text-lg font-bold mt-4">เสื้อยืดลายโลโก้</h2>
-            <p class="text-gray-700 mt-1">ราคา: <span class="font-semibold">฿250</span></p>
-            <p class="text-green-600 text-sm mt-1">สินค้าคงเหลือ: <span class="font-bold">50 ชิ้น</span></p>
-            <button
-                class="w-full bg-black text-white font-semibold py-2 mt-4 rounded hover:bg-gray-800 transition cursor-pointer">
-                ดูรายละเอียด
-            </button>
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-10">
+            <!-- Card -->
+            <div class="product-card">
+                <img src="assets/shirt.jpg" alt="เสื้อ" class="product-img">
+                <h2 class="product-title">เสื้อยืดลายโลโก้</h2>
+                <p class="product-price">ราคา: <span class="font-semibold">฿250</span></p>
+                <p class="product-stock">สินค้าคงเหลือ: <span class="font-bold">50 ชิ้น</span></p>
+                <a href="description/shirt.html" class="btn-black w-full block text-center">ดูรายละเอียด</a>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/bag.jpg" alt="กระเป๋าผ้า" class="product-img">
+                <h2 class="product-title">กระเป๋าผ้าลาย CS</h2>
+                <p class="product-price">ราคา: <span class="font-semibold">฿150</span></p>
+                <p class="product-stock">สินค้าคงเหลือ: <span class="font-bold">35 ชิ้น</span></p>
+                <a href="description/bag.html" class="btn-black w-full block text-center">ดูรายละเอียด</a>
+            </div>
+
+
+            <div class="product-card">
+                <img src="assets/glass.png" alt="แก้ว" class="w-full h-60 object-cover rounded">
+                <h2 class="product-title">แก้วเซรามิคลาย 30 ปี</h2>
+                <p class="product-price">ราคา: <span class="font-semibold">฿120</span></p>
+                <p class="product-stock">สินค้าคงเหลือ: <span class="font-bold">60 ชิ้น</span></p>
+                <button class="btn-black">
+                    ดูรายละเอียด
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/hat.png" alt="หมวก" class="w-full h-60 object-cover rounded">
+                <h2 class="product-title">หมวกแก๊ปลาย CS</h2>
+                <p class="product-price">ราคา: <span class="font-semibold">฿180</span></p>
+                <p class="product-stock">สินค้าคงเหลือ: <span class="font-bold">40 ชิ้น</span></p>
+                <button class="btn-black">
+                    ดูรายละเอียด
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/um.png" alt="ร่ม" class="w-full h-60 object-cover rounded">
+                <h2 class="product-title">ร่ม CSMJU</h2>
+                <p class="product-price">ราคา: <span class="font-semibold">฿200</span></p>
+                <p class="product-stock">สินค้าคงเหลือ: <span class="font-bold">30 ชิ้น</span></p>
+                <button class="btn-black">
+                    ดูรายละเอียด
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/book.png" alt="สมุด" class="w-full h-60 object-cover rounded">
+                <h2 class="product-title">สมุด CSMJU</h2>
+                <p class="product-price">ราคา: <span class="font-semibold">฿80</span></p>
+                <p class="product-stock">สินค้าคงเหลือ: <span class="font-bold">70 เล่ม</span></p>
+                <button class="btn-black">
+                    ดูรายละเอียด
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/pen.png" alt="ปากกา" class="w-full h-60 object-cover rounded">
+                <h2 class="product-title">ปากกา CSMJU</h2>
+                <p class="product-price">ราคา: <span class="font-semibold">฿20</span></p>
+                <p class="product-stock">สินค้าคงเหลือ: <span class="font-bold">150 ด้าม</span></p>
+                <button class="btn-black">
+                    ดูรายละเอียด
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/pin.png" alt="เข็มกลัด" class="w-full h-60 object-cover rounded">
+                <h2 class="product-title">เข็มกลัด CSMJU</h2>
+                <p class="product-price">ราคา: <span class="font-semibold">฿50</span></p>
+                <p class="product-stock">สินค้าคงเหลือ: <span class="font-bold">50 ชิ้น</span></p>
+                <button class="btn-black">
+                    ดูรายละเอียด
+                </button>
+            </div>
+
+
+
         </div>
-
-        <div class="bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1 p-5">
-            <img src="assets/bag.jpg" alt="กระเป๋าผ้า" class="w-full h-60 object-cover rounded">
-            <h2 class="text-lg font-bold mt-4">กระเป๋าผ้าลาย CS</h2>
-            <p class="text-gray-700 mt-1">ราคา: <span class="font-semibold">฿150</span></p>
-            <p class="text-green-600 text-sm mt-1">สินค้าคงเหลือ: <span class="font-bold">35 ชิ้น</span></p>
-            <button
-                class="w-full bg-black text-white font-semibold py-2 mt-4 rounded hover:bg-gray-800 transition cursor-pointer">
-                ดูรายละเอียด
-            </button>
-        </div>
-
-        <div class="bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1 p-5">
-            <img src="assets/glass.png" alt="แก้ว" class="w-full h-60 object-cover rounded">
-            <h2 class="text-lg font-bold mt-4">แก้วเซรามิคลาย 30 ปี</h2>
-            <p class="text-gray-700 mt-1">ราคา: <span class="font-semibold">฿120</span></p>
-            <p class="text-green-600 text-sm mt-1">สินค้าคงเหลือ: <span class="font-bold">60 ชิ้น</span></p>
-            <button
-                class="w-full bg-black text-white font-semibold py-2 mt-4 rounded hover:bg-gray-800 transition cursor-pointer">
-                ดูรายละเอียด
-            </button>
-        </div>
-
-        <div class="bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1 p-5">
-            <img src="assets/hat.png" alt="หมวก" class="w-full h-60 object-cover rounded">
-            <h2 class="text-lg font-bold mt-4">หมวกแก๊ปลาย CS</h2>
-            <p class="text-gray-700 mt-1">ราคา: <span class="font-semibold">฿180</span></p>
-            <p class="text-green-600 text-sm mt-1">สินค้าคงเหลือ: <span class="font-bold">40 ชิ้น</span></p>
-            <button
-                class="w-full bg-black text-white font-semibold py-2 mt-4 rounded hover:bg-gray-800 transition cursor-pointer">
-                ดูรายละเอียด
-            </button>
-        </div>
-
-        <div class="bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1 p-5">
-            <img src="assets/um.png" alt="ร่ม" class="w-full h-60 object-cover rounded">
-            <h2 class="text-lg font-bold mt-4">ร่ม CSMJU</h2>
-            <p class="text-gray-700 mt-1">ราคา: <span class="font-semibold">฿200</span></p>
-            <p class="text-green-600 text-sm mt-1">สินค้าคงเหลือ: <span class="font-bold">30 ชิ้น</span></p>
-            <button
-                class="w-full bg-black text-white font-semibold py-2 mt-4 rounded hover:bg-gray-800 transition cursor-pointer">
-                ดูรายละเอียด
-            </button>
-        </div>
-
-        <div class="bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1 p-5">
-            <img src="assets/book.png" alt="สมุด" class="w-full h-60 object-cover rounded">
-            <h2 class="text-lg font-bold mt-4">สมุด CSMJU</h2>
-            <p class="text-gray-700 mt-1">ราคา: <span class="font-semibold">฿80</span></p>
-            <p class="text-green-600 text-sm mt-1">สินค้าคงเหลือ: <span class="font-bold">70 เล่ม</span></p>
-            <button
-                class="w-full bg-black text-white font-semibold py-2 mt-4 rounded hover:bg-gray-800 transition cursor-pointer">
-                ดูรายละเอียด
-            </button>
-        </div>
-
-        <div class="bg-white rounded-xl shadow hover:shadow-xl transition transform hover:-translate-y-1 p-5">
-            <img src="assets/pen.png" alt="ปากกา" class="w-full h-60 object-cover rounded">
-            <h2 class="text-lg font-bold mt-4">ปากกา CSMJU</h2>
-            <p class="text-gray-700 mt-1">ราคา: <span class="font-semibold">฿20</span></p>
-            <p class="text-green-600 text-sm mt-1">สินค้าคงเหลือ: <span class="font-bold">150 ด้าม</span></p>
-            <button
-                class="w-full bg-black text-white font-semibold py-2 mt-4 rounded hover:bg-gray-800 transition cursor-pointer">
-                ดูรายละเอียด
-            </button>
-        </div>
-
-
-
-    </div>
-
+    </main>
     <script src="js/hamberger.js"></script>
 </body>
 
