@@ -78,11 +78,10 @@
                     rounded font-semibold transition">
                     ย้อนกลับ
                 </a>
-                <img src="../assets/shirt.jpg" alt="เสื้อยืด"
-                    class="w-full rounded shadow-lg object-cover max-h-[400px]" />
-                <h2 class="text-3xl font-bold mt-4">เสื้อยืด</h2>
-                <p class="text-xl mt-2">ราคา: <span class="font-semibold">฿250</span></p>
-                <p class="text-gray-600 mt-1">สินค้าคงเหลือ: <span class="font-bold">50 ชิ้น</span></p>
+                <img src="../assets/pen.png" alt="ปากกา" class="w-full rounded shadow-lg object-cover max-h-[400px]" />
+                <h2 class="text-3xl font-bold mt-4">ปากกา</h2>
+                <p class="text-xl mt-2">ราคา: <span class="font-semibold">฿20</span></p>
+                <p class="text-gray-600 mt-1">สินค้าคงเหลือ: <span class="font-bold">150 ด้าม</span></p>
             </section>
 
             <!-- ฟอร์มสั่งซื้อ -->
@@ -91,28 +90,54 @@
                 <h3 class="text-2xl font-semibold mb-4">แบบฟอร์มสั่งซื้อ</h3>
                 <form action="#" method="post" enctype="multipart/form-data" class="space-y-6">
                     <div>
-                        <label for="size" class="block font-semibold mb-1">เลือกขนาด</label>
-                        <select id="size" name="size" required class="select">
-                            <option value="" disabled selected>-- กรุณาเลือกขนาด --</option>
-                            <option>XS</option>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                            <option>2XL</option>
-                            <option>3XL</option>
+                        <label for="pen-type" class="block font-semibold mb-2 text-gray-700">ประเภทปากกา</label>
+                        <select id="pen-type" name="pen-type" class="select">
+                            <option selected disabled>-- โปรดเลือกประเภทปากกา --</option>
+                            <option>ปากกาลูกลื่น</option>
+                            <option>ปากกาหมึกซึม</option>
+                            <option>ปากกาเจล</option>
                         </select>
                     </div>
 
                     <div>
-                        <label for="color" class="block font-semibold mb-1">เลือกสี</label>
-                        <select id="color" name="color" required class="select">
-                            <option value="" disabled selected>-- กรุณาเลือกสี --</option>
+                        <label for="ink-color" class="block font-semibold mb-2 text-gray-700">สีหมึก</label>
+                        <select id="ink-color" name="ink-color" class="select">
+                            <option selected disabled>-- โปรดเลือกสีหมึก --</option>
+                            <option>ดำ</option>
+                            <option>น้ำเงิน</option>
+                            <option>แดง</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="body-color" class="block font-semibold mb-2 text-gray-700">สีตัวด้าม</label>
+                        <select id="body-color" name="body-color" class="select">
+                            <option selected disabled>-- โปรดเลือกสีตัวด้าม --</option>
                             <option>ดำ</option>
                             <option>ขาว</option>
-                            <option>แดง</option>
                             <option>น้ำเงิน</option>
-                            <option>เขียว</option>
+                            <option>แดง</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="tip-size" class="block font-semibold mb-2 text-gray-700">ขนาดหัว (mm)</label>
+                        <select id="tip-size" name="tip-size" class="select">
+                            <option selected disabled>-- โปรดเลือกขนาดหัว --</option>
+                            <option>0.5</option>
+                            <option>0.7</option>
+                            <option>1.0</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="color" class="block font-semibold mb-2 text-gray-700">สี</label>
+                        <select id="color" name="color" class="select">
+                            <option selected disabled>-- โปรดเลือกสี --</option>
+                            <option>ดำ</option>
+                            <option>ขาว</option>
+                            <option>น้ำเงิน</option>
+                            <option>แดง</option>
                         </select>
                     </div>
 
@@ -123,7 +148,7 @@
 
                     <div>
                         <label class="block font-semibold mb-1">ราคา (บาท)</label>
-                        <input type="text" value="250" readonly
+                        <input type="text" value="20" readonly
                             class="w-full border border-gray-300 rounded px-4 py-2 bg-gray-300" />
                     </div>
                     <!-- ชื่อ-นามสกุล -->
@@ -198,6 +223,7 @@
 
         </div>
     </main>
+
     <footer class="bg-gray-800 text-white py-6 text-center mt-10 rounded-t-lg shadow-lg">
         <div class="mb-2 text-lg font-semibold">สาขาวิชาวิทยาการคอมพิวเตอร์</div>
         <div class="mb-1">ชั้น 6, อาคาร 60 ปี คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้</div>

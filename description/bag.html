@@ -78,11 +78,11 @@
                     rounded font-semibold transition">
                     ย้อนกลับ
                 </a>
-                <img src="../assets/shirt.jpg" alt="เสื้อยืด"
+                <img src="../assets/bag.jpg" alt="กระเป๋า"
                     class="w-full rounded shadow-lg object-cover max-h-[400px]" />
-                <h2 class="text-3xl font-bold mt-4">เสื้อยืด</h2>
-                <p class="text-xl mt-2">ราคา: <span class="font-semibold">฿250</span></p>
-                <p class="text-gray-600 mt-1">สินค้าคงเหลือ: <span class="font-bold">50 ชิ้น</span></p>
+                <h2 class="text-3xl font-bold mt-4">กระเป๋า</h2>
+                <p class="text-xl mt-2">ราคา: <span class="font-semibold">฿150</span></p>
+                <p class="text-gray-600 mt-1">สินค้าคงเหลือ: <span class="font-bold">35 ชิ้น</span></p>
             </section>
 
             <!-- ฟอร์มสั่งซื้อ -->
@@ -93,14 +93,21 @@
                     <div>
                         <label for="size" class="block font-semibold mb-1">เลือกขนาด</label>
                         <select id="size" name="size" required class="select">
-                            <option value="" disabled selected>-- กรุณาเลือกขนาด --</option>
-                            <option>XS</option>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                            <option>2XL</option>
-                            <option>3XL</option>
+                            <option selected disabled>-- โปรดเลือกขนาด --</option>
+                            <option>เล็ก (Small)</option>
+                            <option>กลาง (Medium)</option>
+                            <option>ใหญ่ (Large)</option>
+                            <option>ใหญ่พิเศษ (Extra Large)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="bag-type" class="block font-semibold mb-2 text-gray-700">ประเภทกระเป๋า</label>
+                        <select id="bag-type" name="bag-type" class="select">
+                            <option selected disabled>-- โปรดเลือกประเภท --</option>
+                            <option>สะพายข้าง</option>
+                            <option>เป้</option>
+                            <option>ถือ</option>
                         </select>
                     </div>
 
@@ -123,7 +130,7 @@
 
                     <div>
                         <label class="block font-semibold mb-1">ราคา (บาท)</label>
-                        <input type="text" value="250" readonly
+                        <input type="text" value="150" readonly
                             class="w-full border border-gray-300 rounded px-4 py-2 bg-gray-300" />
                     </div>
                     <!-- ชื่อ-นามสกุล -->

@@ -78,11 +78,10 @@
                     rounded font-semibold transition">
                     ย้อนกลับ
                 </a>
-                <img src="../assets/shirt.jpg" alt="เสื้อยืด"
-                    class="w-full rounded shadow-lg object-cover max-h-[400px]" />
-                <h2 class="text-3xl font-bold mt-4">เสื้อยืด</h2>
-                <p class="text-xl mt-2">ราคา: <span class="font-semibold">฿250</span></p>
-                <p class="text-gray-600 mt-1">สินค้าคงเหลือ: <span class="font-bold">50 ชิ้น</span></p>
+                <img src="../assets/um.png" alt="ร่ม" class="w-full rounded shadow-lg object-cover max-h-[400px]" />
+                <h2 class="text-3xl font-bold mt-4">ร่ม</h2>
+                <p class="text-xl mt-2">ราคา: <span class="font-semibold">฿200</span></p>
+                <p class="text-gray-600 mt-1">สินค้าคงเหลือ: <span class="font-bold">30 ชิ้น</span></p>
             </section>
 
             <!-- ฟอร์มสั่งซื้อ -->
@@ -91,27 +90,34 @@
                 <h3 class="text-2xl font-semibold mb-4">แบบฟอร์มสั่งซื้อ</h3>
                 <form action="#" method="post" enctype="multipart/form-data" class="space-y-6">
                     <div>
-                        <label for="size" class="block font-semibold mb-1">เลือกขนาด</label>
-                        <select id="size" name="size" required class="select">
-                            <option value="" disabled selected>-- กรุณาเลือกขนาด --</option>
-                            <option>XS</option>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                            <option>2XL</option>
-                            <option>3XL</option>
+                        <label for="umberlla-type" class="block font-semibold mb-2 text-gray-700">ประเภทร่ม</label>
+                        <select id="umberlla-type" name="umberlla-type" class="select">
+                            <option selected disabled>-- โปรดเลือกประเภทร่ม --</option>
+                            <option>ร่มพับ</option>
+                            <option>ร่มตอนเดียว</option>
+                            <option>ร่มสนาม</option>
                         </select>
                     </div>
 
                     <div>
-                        <label for="color" class="block font-semibold mb-1">เลือกสี</label>
-                        <select id="color" name="color" required class="select">
-                            <option value="" disabled selected>-- กรุณาเลือกสี --</option>
+                        <label for="size" class="block font-semibold mb-2 text-gray-700">ขนาด (นิ้ว)</label>
+                        <select id="size" name="size" class="select">
+                            <option selected disabled>-- โปรดเลือกขนาด --</option>
+                            <option>16</option>
+                            <option>18</option>
+                            <option>20</option>
+                            <option>22</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="color" class="block font-semibold mb-2 text-gray-700">สี</label>
+                        <select id="color" name="color" class="select">
+                            <option selected disabled>-- โปรดเลือกสี --</option>
                             <option>ดำ</option>
-                            <option>ขาว</option>
-                            <option>แดง</option>
                             <option>น้ำเงิน</option>
+                            <option>แดง</option>
+                            <option>เหลือง</option>
                             <option>เขียว</option>
                         </select>
                     </div>
@@ -123,7 +129,7 @@
 
                     <div>
                         <label class="block font-semibold mb-1">ราคา (บาท)</label>
-                        <input type="text" value="250" readonly
+                        <input type="text" value="200" readonly
                             class="w-full border border-gray-300 rounded px-4 py-2 bg-gray-300" />
                     </div>
                     <!-- ชื่อ-นามสกุล -->
